@@ -314,6 +314,7 @@ func (s *SmartContract) queryAllCars(APIstub shim.ChaincodeStubInterface) sc.Res
 	buffer.WriteString("]")
 
 	fmt.Printf("- queryAllCars:\n%s\n", buffer.String())
+	fmt.Printf("- queryAllCars:\n%s\n", buffer.String())
 
 	return shim.Success(buffer.Bytes())
 }
